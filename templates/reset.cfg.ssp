@@ -42,11 +42,16 @@ alias hide_weapon "r_drawviewmodel 0"
 <%= unbindif(disguiseCycle) %> 
 <%= unbindif(disguiseFriendlyCycle) %> 
 <%= unbindif(disguiseLast) %> 
+<%= unbindif(ternaryAttack) %>
+<%= unbindif(abuseReport) %>
+<%= unbindif(backpackComplete) %>
+<%= unbindif(reloadWeapon) %>
 
 //binds
 <%= bindif(directWeapon1, "weapon1") %>
 <%= bindif(directWeapon2, "weapon2") %>
 <%= bindif(directWeapon3, "weapon3") %>
+<%= bindif(reloadWeapon, "\"+reload; current_vis_shootswitch\"") %>
 <%= bindif(primSecSwap, "primsecswap") %>
 <%= bindif(meleeSwap, "othermeleeswap") %>
 <%= bindif(previousWeapon, "previous_weapon") %>
@@ -54,9 +59,11 @@ alias hide_weapon "r_drawviewmodel 0"
 <%= bindif(prevInvWeapon, "prev_inv_weapon") %>
 <%= bindif(primAttack, "\"+attack; current_vis_shootswitch\"") %>
 <%= bindif(secAttack, "\"+attack2; current_vis_shootswitch\"") %>
+<%= bindif(ternaryAttack, "\"+attack3; current_vis_shootswitch\"") %>
 <%= bindif(normalJump, "\"+jump; current_vis_strafeswitch\"") %>
 <%= bindif(requestAccept, "cl_trigger_first_notification") %>
 <%= bindif(requestDecline, "cl_decline_first_notification") %>
+<%= bindif(abuseReport, "abuse_report_queue") %>
 <%= bindif(switchBadnet, "bad_net") %>
 <%= bindif(switchGoodnet, "good_net") %>
 <%= bindif(switchLannet, "lan_net") %>
@@ -80,11 +87,12 @@ alias hide_weapon "r_drawviewmodel 0"
 <%= bindif(inspect, "inspect") %>
 <%= bindif(medic, "") %>"voicemenu 0 0"
 <%= bindif(backpack, "open_charinfo_direct") %>
+<%= bindif(backpackComplete, "open_charinfo_backpack") %>
 <%= bindif(dropItem, "dropitem") %>
 <%= bindif(switchTeam, "changeteam") %>
 <%= bindif(switchClass, "changeclass") %>
 <%= bindif(console, "toggleconsole") %>
-<%= bindif(actionSlot, "use_action_slot_item") %>
+<%= bindif(actionSlot, "+use_action_slot_item") %>
 <%= bindif(voiceMenu1, "voice_menu_1") %>
 <%= bindif(voiceMenu2, "voice_menu_2") %>
 <%= bindif(voiceMenu3, "voice_menu_3") %>

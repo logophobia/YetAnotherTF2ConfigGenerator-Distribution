@@ -67,6 +67,7 @@ cl_autoreload <%= autoreload %>
 hud_fastswitch <%= fastswitch %>
 hud_combattext <%= damagenumbers %>
 cl_use_tournament_specgui <%= enableSpecTournamentMode %>
+cl_hud_minmode <%= hudMin %>
 
 //graphics options, I define them here so people will not have to edit stuff in the graphicsconfigs, they're outcommented in chris' graphics configs themselves
 #if(enableSprays)
@@ -113,18 +114,6 @@ cl_ragdoll_physics_enable 0
 g_ragdoll_fadespeed 0
 g_ragdoll_lvfadespeed 0
 ragdoll_sleepaftertime 0
-#end
-
-#if(precEnabled)
-//P-Rec
-prec_log <%= precLog %>
-prec_screens <%= precScreens %>
-prec_delete_useless_demo <%= precDeleteUseless %>
-prec_min_streak <%= precMinStreak %>
-prec_kill_delay <%= precKillDelay %>
-prec_dir <%= precDir %>
-prec_mode <%= precMode %>
-<%= bindif(precMark, "prec_mark") %>
 #end
 
 <%= autoexecExtraScript %>

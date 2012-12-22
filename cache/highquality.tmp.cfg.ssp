@@ -1,5 +1,5 @@
-<%@ val steamDir: java.lang.String %>
-<%@ val steamUser: java.lang.String %>
+
+
 <%@ val classWeaponSensitivity: scala.collection.immutable.Map[java.lang.String, scala.collection.immutable.List[Double]] %>
 <%@ val classWeaponViewmodelSwitchMode: scala.collection.immutable.Map[java.lang.String, scala.collection.immutable.List[java.lang.String]] %>
 <%@ val classWeaponShow: scala.collection.immutable.Map[java.lang.String, scala.collection.immutable.List[Boolean]] %>
@@ -26,14 +26,6 @@
 <%@ val graphicsConfig: java.lang.String %>
 <%@ val zoomFactor: Double %>
 <%@ val scoreboardNetgraph: Int %>
-<%@ val precEnabled: Boolean %>
-<%@ val precLog: Int %>
-<%@ val precScreens: Int %>
-<%@ val precDeleteUseless: Int %>
-<%@ val precMinStreak: Int %>
-<%@ val precKillDelay: Int %>
-<%@ val precDir: java.lang.String %>
-<%@ val precMode: Int %>
 <%@ val autocallThreshold: Int %>
 <%@ val showHealBeam: Boolean %>
 <%@ val healBatching: Int %>
@@ -42,6 +34,7 @@
 <%@ val zoomSensitivity: Double %>
 <%@ val noCrossHairZoom: Int %>
 <%@ val fullChargeBell: Int %>
+<%@ val hudMin: Int %>
 <%@ val showFlames: Boolean %>
 <%@ val showViewmodelCloak: Boolean %>
 <%@ val disguiseCycleClasses: scala.collection.immutable.List[Int] %>
@@ -55,6 +48,7 @@
 <%@ val movementBack: java.lang.String %>
 <%@ val primAttack: java.lang.String %>
 <%@ val secAttack: java.lang.String %>
+<%@ val ternaryAttack: java.lang.String %>
 <%@ val primSecSwap: java.lang.String %>
 <%@ val meleeSwap: java.lang.String %>
 <%@ val previousWeapon: java.lang.String %>
@@ -64,6 +58,9 @@
 <%@ val directWeapon2: java.lang.String %>
 <%@ val directWeapon3: java.lang.String %>
 <%@ val directWeapon4: java.lang.String %>
+<%@ val jump: java.lang.String %>
+<%@ val reloadWeapon: java.lang.String %>
+<%@ val normalJump: java.lang.String %>
 <%@ val voiceMenu1: java.lang.String %>
 <%@ val voiceMenu2: java.lang.String %>
 <%@ val voiceMenu3: java.lang.String %>
@@ -79,17 +76,17 @@
 <%@ val suicide: java.lang.String %>
 <%@ val screenshot: java.lang.String %>
 <%@ val saveReplay: java.lang.String %>
+<%@ val abuseReport: java.lang.String %>
 <%@ val quickSwitch: java.lang.String %>
 <%@ val teamOnlyTalk: java.lang.String %>
 <%@ val normalTalk: java.lang.String %>
 <%@ val medic: java.lang.String %>
 <%@ val scoreboard: java.lang.String %>
 <%@ val backpack: java.lang.String %>
+<%@ val backpackComplete: java.lang.String %>
 <%@ val switchClass: java.lang.String %>
 <%@ val switchTeam: java.lang.String %>
 <%@ val medicRadar: java.lang.String %>
-<%@ val jump: java.lang.String %>
-<%@ val normalJump: java.lang.String %>
 <%@ val zoom: java.lang.String %>
 <%@ val spray: java.lang.String %>
 <%@ val requestAccept: java.lang.String %>
@@ -130,7 +127,6 @@
 <%@ val destroyEntrance: java.lang.String %>
 <%@ val destroyExit: java.lang.String %>
 <%@ val switchSpec: java.lang.String %>
-<%@ val precMark: java.lang.String %>
 <%@ val toggleReady: java.lang.String %>
 <%@ val voice01: java.lang.String %>
 <%@ val voice02: java.lang.String %>

@@ -58,6 +58,7 @@
 <%@ val directWeapon2: java.lang.String %>
 <%@ val directWeapon3: java.lang.String %>
 <%@ val directWeapon4: java.lang.String %>
+<%@ val directWeapon5: java.lang.String %>
 <%@ val jump: java.lang.String %>
 <%@ val reloadWeapon: java.lang.String %>
 <%@ val normalJump: java.lang.String %>
@@ -201,6 +202,8 @@ alias hide_weapon "r_drawviewmodel 0"
 <%= unbindif(abuseReport) %>
 <%= unbindif(backpackComplete) %>
 <%= unbindif(reloadWeapon) %>
+<%= unbindif(directWeapon4) %>
+<%= unbindif(directWeapon5) %>
 
 //binds
 <%= bindif(directWeapon1, "weapon1") %>

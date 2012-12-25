@@ -58,6 +58,7 @@
 <%@ val directWeapon2: java.lang.String %>
 <%@ val directWeapon3: java.lang.String %>
 <%@ val directWeapon4: java.lang.String %>
+<%@ val directWeapon5: java.lang.String %>
 <%@ val jump: java.lang.String %>
 <%@ val reloadWeapon: java.lang.String %>
 <%@ val normalJump: java.lang.String %>
@@ -230,3 +231,4 @@ alias dexit "destroy 3"
 <%= bindif(destroyExit, "dexit") %> 
 <%= bindif(secAttack, "+haulandwrench") %>
 <%= bindif(directWeapon4, "\"slot4; bind " + primAttack + " +buildandwrench\"") %>
+<%= bindif(directWeapon5, "slot5") %>

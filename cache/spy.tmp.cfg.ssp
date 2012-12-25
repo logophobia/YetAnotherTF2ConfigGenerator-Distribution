@@ -58,6 +58,7 @@
 <%@ val directWeapon2: java.lang.String %>
 <%@ val directWeapon3: java.lang.String %>
 <%@ val directWeapon4: java.lang.String %>
+<%@ val directWeapon5: java.lang.String %>
 <%@ val jump: java.lang.String %>
 <%@ val reloadWeapon: java.lang.String %>
 <%@ val normalJump: java.lang.String %>
